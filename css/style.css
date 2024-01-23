@@ -121,3 +121,112 @@
 .form-container form a:hover {
   text-decoration: underline;
 }
+
+.container {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container .profile {
+  width: 400px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.container .profile img {
+  width: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.container .profile h3 {
+  font-size: 20px;
+  color: var(--black);
+  margin: 5px 0;
+}
+
+.container .profile p {
+  font-size: 20px;
+  color: var(--black);
+  margin-top: 20px;
+}
+
+.container .profile p a:hover {
+  text-decoration: underline;
+}
+
+/*for the profile page*/
+
+.update-profile {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.update-profile form {
+  width: 700px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.update-profile form img {
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px;
+}
+
+.update-profile form .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+} 
+
+.update-profile form .flex .inputBox{
+    width: 49%;
+}
+
+.update-profile form .flex .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color: var(--black);
+}
+
+.update-profile form .flex .inputBox .box{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--light-bg);
+    padding: 12px 14px;
+    font-size: 17px;
+}
+
+/*----------media queries----------*/
+
+@media (max-width: 650px) {
+    .update-profile form .flex{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .update-profile form .flex .inputBox {
+        width: 100%;
+    }
+}
+
