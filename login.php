@@ -17,13 +17,8 @@ if(isset($_POST['submit'])) {
     }else{
         $message[] = 'invalid login details';
     }
-<<<<<<< HEAD
 };
 
-=======
-
-}
->>>>>>> 2e46ad50cc7e3b87da75c176ebf120efe635dc19
 ?>
 
 
